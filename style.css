@@ -1,11 +1,174 @@
-html {
-    box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit; 
+html {
+    font-size: 100%;
 }
 
 body {
-    
+    font-family: Arial, sans-serif;
+    background-color: #f4a261;
+    color: #222;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+}
+
+header > img {
+    width: 6vw;
+    max-width: 8rem;
+    height: auto;
+    transform: scale(2.6);
+    margin-left: 3%;
+}
+
+header > nav{
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    margin: 8vh 0;
+}
+
+h1 {
+    color: #1e40af;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #1e40af;
+    margin-bottom: 2vh;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.box {
+    margin-bottom: 10vh;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4vw;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: auto;
+    display: block;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+}
+
+.card {
+    background-color: #ffd7a8;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 18rem;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.card h4 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 2vh;
+    padding: 0.8em 1.5em;
+    border: none;
+    background-color: #1e40af;
+    color: white;
+    border-radius: 2em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #102a72;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    gap: 3vw;
+    align-items: center;
+}
+
+.skills img {
+    width: 60%;
+    max-width: 5rem;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 728px) {
+    main {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }

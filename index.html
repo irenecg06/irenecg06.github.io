@@ -3,20 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <section><img src="img/logo_portafolio.png"></section>
-        <section><a href="#sobremi">Sobre mí</a></section>
-        <section><a href="#proyectos">Proyectos</a></section>
-        <section><a href="#habilidades">Habilidades</a></section>
-    </header>
-    <main>
-        <article><img src="foto_de_gato"></article>
-        <section class="sobremi">Sobre mí</section>
-        <section class="proyectos">Proyectos</section>
-        <section class="habilidades">Habilidades</section>
-    </main>
-</body>
+    <body>
+        <header>
+            <img src="img/logo_portafolio.png" alt="logo" class="logo">
+            <nav class="menu">
+                <a href="#sobremi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+            </nav>
+        </header>
+        <main>
+            <section class="intro">
+                <h1>Irene Cabrera</h1>
+                <br>
+                <h3>Estudiante de Desarrollo Web</h3>
+            </section>
+            <section id="sobremi" class="box">
+                <h2>Sobre mí</h2>
+                <section class="about">
+                    <section class="photo">
+                        <img src="img/yoo.jpg" alt="foto personal">
+                    </section>
+                    <section class="text">
+                        <p>Soy Irene Cabrera, y soy estudiante de Desarrollo Web con una gran pasión por la tecnología y el aprendizaje constante. </p>
+                        <br>
+                        <p>Me encanta entender cómo funcionan las cosas por dentro y transformar ideas en experiencias digitales funcionales y atractivas.</p>
+                    </section>           
+                </section>
+            </section>
+            <section id="proyectos" class="box">
+                <h2>Proyectos</h2>
+                <section class="projects">
+                    <section class="card">
+                        <img src="" alt="Foto de proyecto 1">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción</p>
+                        <button class="btn">Ver proyecto</button>
+                    </section>
+                    <section class="card">
+                        <img src="img/img.jpg" alt="Foto de proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción</p>
+                        <button class="btn">Ver proyecto</button>
+                    </section>
+                </section>
+            </section>
+            <section id="habilidades" class="box">
+                <h2>Habilidades</h2>
+                <section class="skills">
+                    <img src="img/html.svg" alt="HTML">
+                    <img src="img/css.svg" alt="CSS">
+                    <img src="img/c_sharp.svg" alt="C#">
+                    <img src="img/docker.svg" alt="Docker">
+                    <img src="img/javascript.svg" alt="JavaScript">
+                    <img src="img/microsoftsqlserver.svg" alt="Microsoft SQL">
+                    <img src="img/git.svg" alt="Git">
+                </section>
+            </section>
+        </main>
+    </body>
 </html>
